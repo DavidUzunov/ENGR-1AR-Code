@@ -53,6 +53,12 @@ This project implements an Arduino-powered autonomous rover capable of:
 
 ---
 
+## Libraries Used
+- **Servo**: To control the servo motor.
+- **Ultrasonic**: To interface with the ultrasonic sensors.
+
+---
+
 ## Notes
 
 * Avoid using digital pins 0 and 1 (used by Serial).
