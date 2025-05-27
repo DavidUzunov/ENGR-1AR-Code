@@ -4,13 +4,16 @@
 Servo servoMotor;
 
 ServoControl::ServoControl() {
+    servoPin = 9; //Example pin - this would use digital pin 9 on the arduino
     grabAngle = 90;  // For example, grabbing at 90 degrees
     resetAngle = 0;  // Default resting angle
 }
 
 void ServoControl::setupServo() {
+    // Example: attach servo to pin
     servoMotor.attach(servoPin);
-    servoMotor.write(resetAngle);  // Start at resting position
+    // Set initial position if needed
+    servoMotor.write(resetAngle);
 }
 
 void ServoControl::grab() {

@@ -15,27 +15,6 @@ arduino servo grabbing
 
 */
 
-/*
-
-
-const int triggerPins[] = {2, 4, 6, 8, 10, 12};//transmit the ultrasonic ping
-const int echoPins[] =    {3, 5, 7, 9, 11, 13};//receive the ultrasonic echo
-// Index: 0 = front-low, 1 = left-low, 2 = right-low,
-//        3 = high-center, 4 = high-left, 5 = high-right
-
-
-
-void setup() {
-  // put your setup code here, to run once:
-
-}
-
-void loop() {
-  // put your main code here, to run repeatedly:
-
-}
-
-*/
 
 #include "Rover.h"
 
@@ -48,5 +27,6 @@ void setup() {
 void loop() {
   rover.navigate();
   rover.checkForTarget();
+  if(rover.TargetFound())
   rover.grabTarget();
 }

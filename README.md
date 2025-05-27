@@ -10,7 +10,7 @@ This project implements an Arduino-powered autonomous rover capable of:
 
 ## Features
 
-* **Obstacle avoidance** with 3 low-mounted ultrasonic sensors (front, left, right)
+* **Obstacle avoidance** with 2 low-mounted ultrasonic sensors (left, right) attached at an angle
 * **Target detection** with 3 high-mounted ultrasonic sensors (center, left, right)
 * **Servo-controlled claw** automatically grabs the target when in range
 * Fully autonomous logic for navigating a simple track
@@ -29,7 +29,9 @@ This project implements an Arduino-powered autonomous rover capable of:
 
 ---
 
-## Sensor Pin Configuration
+## Pin Configuration(For Reference)
+
+### Sensors
 
 | Sensor               | Trigger Pin | Echo Pin |
 | -------------------- | ----------- | -------- |
@@ -40,6 +42,15 @@ This project implements an Arduino-powered autonomous rover capable of:
 | High-Left (target)   | 10          | 11       |
 | High-Right (target)  | 12          | 13       |
 
+### Motors
+
+| Motor       | Pin     | 
+| ----------- | ------- | 
+| Right Motor | 14(A0)  |
+| Left Motor  | 15(A1)  |
+| Servo       | 16(A2)  |
+
+
 ---
 
 ## Setup Instructions
@@ -47,7 +58,7 @@ This project implements an Arduino-powered autonomous rover capable of:
 1. Wire all ultrasonic sensors to the pins shown above.
 2. Connect the servo to a PWM-capable digital pin (e.g., pin 9 or 10).
 3. Upload the Arduino sketch using the Arduino IDE.
-4. Power the Arduino and motors with an external battery pack (do **not** power motors via USB).
+4. Power the Arduino and motors with an external battery pack (do **not** power motors via USB). Ideally, power them separately, but use your discretion. 
 5. Place the rover on a test track with obstacles and a target object.
 6. The rover should begin navigating and attempt to find and grab the target.
 
@@ -63,5 +74,5 @@ This project implements an Arduino-powered autonomous rover capable of:
 
 * Avoid using digital pins 0 and 1 (used by Serial).
 * Ensure all sensors are securely mounted and angled appropriately.
-* If using an L298N driver, be sure to connect `EN` pins and set proper direction control in code.
+* If using an L298N driver, be sure to connect `EN` pins and set proper direction control in code(Let me know and I can help).
 * You may fine-tune distances and angles in code for better accuracy.
