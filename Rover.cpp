@@ -36,7 +36,3 @@ void Rover::grabTarget() {
     // Move servo to grab the target when in range
     servoControl.grab();
 }
-
-bool TargetFound(){
-    //checks if you're at the target, returns true if yes, false if no
-}

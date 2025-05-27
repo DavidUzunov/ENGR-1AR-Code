@@ -27,6 +27,5 @@ void setup() {
 void loop() {
   rover.navigate();
   rover.checkForTarget();
-  if(rover.TargetFound())
   rover.grabTarget();
 }
