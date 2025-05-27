@@ -35,7 +35,6 @@ This project implements an Arduino-powered autonomous rover capable of:
 
 | Sensor               | Trigger Pin | Echo Pin |
 | -------------------- | ----------- | -------- |
-| Front-Low            | 2           | 3        |
 | Left-Low             | 4           | 5        |
 | Right-Low            | 6           | 7        |
 | High-Center (target) | 8           | 9        |
@@ -46,8 +45,8 @@ This project implements an Arduino-powered autonomous rover capable of:
 
 | Motor       | Pin     | 
 | ----------- | ------- | 
-| Right Motor | 14(A0)  |
-| Left Motor  | 15(A1)  |
+| Right Motor | 2       |
+| Left Motor  | 3       |
 | Servo       | 16(A2)  |
 
 

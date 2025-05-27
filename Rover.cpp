@@ -4,8 +4,8 @@
 Rover::Rover() {}
 
 void Rover::setup() {
-    RightMotorPin = 0;//Example pins
-    LeftMotorPin = 1;
+    RightMotorPin = 2;//Example pins
+    LeftMotorPin = 3;
     sensorControl.setupSensors();
     servoControl.setupServo();
     setupMotors();
