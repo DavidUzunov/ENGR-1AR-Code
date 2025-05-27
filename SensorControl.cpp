@@ -6,8 +6,6 @@ void SensorControl::setupSensors() {
     // Initialize pins and configure sensor library
 
     //init the pins - CHANGE TO WHAT THEY ACTUALLY ARE
-    frontLowPin[0] = 2; // Trigger
-    frontLowPin[1] = 3; // Echo pins
     leftLowPin[0] = 4;  // Trigger
     leftLowPin[1] = 5;  // Echo
     rightLowPin[0] = 6; // Trigger
