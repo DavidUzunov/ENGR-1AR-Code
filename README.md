@@ -20,7 +20,7 @@ This project implements an Arduino-powered autonomous rover capable of:
 ## Hardware Requirements
 
 * Arduino Uno (or compatible board)
-* 6× HC-SR04 ultrasonic distance sensors
+* 5× HC-SR04 ultrasonic distance sensors
 * 1× Servo motor (for the claw)
 * Motor driver (L298N or similar)
 * 2× DC motors + wheels
