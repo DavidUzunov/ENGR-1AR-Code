@@ -25,6 +25,20 @@ void Rover::navigate() {
     // Check obstacle sensors and determine direction
     sensorControl.checkObstacles();
     // Use logic to move based on sensor data
+    if (sensorControl.isPathClear()) {
+        // Move forward if the path is clear
+        digitalWrite(LeftMotorPin, HIGH);
+        digitalWrite(RightMotorPin, HIGH);
+    } else {
+        // Obstacle detected, turn right
+        digitalWrite(LeftMotorPin, HIGH);
+        digitalWrite(RightMotorPin, LOW);
+        delay(300); // Turn for a short time
+        digitalWrite(LeftMotorPin, LOW);
+        digitalWrite(RightMotorPin, LOW);
+    }
+
+
 }
 
 void Rover::checkForTarget() {
